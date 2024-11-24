@@ -688,6 +688,7 @@ ul {
 	display: inline-block;
 	padding: 6px 25px;
 	border-radius: 5px;
+	cursor: pointer;
 }
 .galley-category-list li.active {
 	background-color: #2792d6;

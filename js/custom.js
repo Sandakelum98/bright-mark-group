@@ -108,5 +108,22 @@
 			}
 		});
 
+		//gallery
+		var $grid = $('.grid').isotope({
+			itemSelector: '.grid-item',
+			layoutMode: 'fitRows',
+		});
+
+		$('.galley-category-list .gallery-filter-btn').on("click", function () {
+			var value = $(this).attr('data-name');
+
+			$grid.isotope({
+				filter: value
+			});
+
+			$('.galley-category-list .gallery-filter-btn').removeClass('active');
+			$(this).addClass('active');
+		})
+
     });
 })(jQuery);
